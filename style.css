@@ -1,0 +1,291 @@
+@import url('https://fonts.cdnfonts.com/css/insignia');
+
+*{
+margin:0;
+padding: 0; 
+box-sizing:border-box; 
+}
+
+body{
+background:#021e24;
+min-height:100vh; 
+overflow-x:hidden; 
+}
+
+h2{
+font-family: 'Insignia', sans-serif;
+font-size:4em;
+color:#ca6702;
+padding:10vh 5vw 5vh 5vw; 
+text-align : center;
+}
+
+h3{
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+font-size:2.4em;
+color:#0a9396;
+padding:1vh 5vw 1vh 5vw; 
+}
+
+p{
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+color:#0a9396; 
+padding:0vh 5vw 5vh 5vw; 
+font-size:1.2em;
+}
+
+h4{
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+color:#e9d8a6; 
+margin:0vh 5vw 2.5vh 0vw; 
+padding : 2vh;
+font-size:1.2em;
+background-color:#005f73;
+}
+ 
+i{
+font-size:0.8em;
+}
+
+span{
+padding-right : 40px;
+}
+
+.propos0{
+display : flex;
+width:100vw; 
+vertical-align: top;
+justify-content:space-between;
+}
+.propos0 b{
+font-weight: 600;
+}
+.propos2{
+width:100vw; 
+}
+
+a{
+text-decoration:none;
+}
+
+
+header {
+width:100vw;
+height:30px;
+position : fixed; 
+display : flex; 
+align-items: center;
+justify-content:space-between; 
+z-index:100;
+background-color:#ca6702;
+}
+
+
+.logo{
+color : #e9d8a6; 
+font-weight:700; 
+font-size:2em;
+padding : 0vh 5vw;
+}
+
+.navigation a{
+position:relative;
+color: #e9d8a6; 
+border-radius : 0px;
+margin: 0vh 4vw 0vh 4vw; 
+z-index : 1;
+padding : 5px 10px;
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+font-size:1em;
+transition:0.4s;
+}
+
+.navigation a:hover{
+background : #005f73; 
+transition:0.2s;
+padding:3px 10px;
+font-size: 1.2em;
+}
+
+.parallax {
+position : relative; 
+display : flex; 
+justify-content:center; 
+align-items : center; 
+height:100vh; 
+}
+
+.parallax img {
+position:absolute; 
+top:0;
+left:0;
+width:100vw;
+pointer-events:none; 
+}
+.sec {
+position:relative;
+background:#021e24; 
+margin-bottom: 10px; 
+}
+
+.icon h3:hover{
+transform: scale(1.5) rotate(45deg); 
+transition : 0.2s;
+}
+
+.icon h3{
+transition : 0.4s;
+}
+
+.info{
+display: none;
+position: absolute;
+left : 50vw;
+width : 50vw;
+z-index: 1;
+transition : 0.4s;
+}
+
+
+.info p{
+color: #e9d8a6;
+background-color: #005f73;
+padding-top: 2vh;
+border-radius: 0 0 0 20px;
+}
+
+.dropbox{
+transition : 0.4s;
+}
+.dropbox:hover{
+transition : 0.2s;
+}
+
+.dropbox:hover .info {
+display: block;
+transition : 0.2s;
+}
+
+
+.travail:hover{
+background-color:#005f73;
+transition : 0.2s
+}
+.travail:hover h3{
+color: #e9d8a6;
+font-size:2.5em;
+transition : 0.2s
+}
+.travail{
+display:flex;
+justify-content:space-between;
+align-items : flex-end;
+position:relative;
+width:100vw;
+background-color:;
+transition : 0.4s
+}
+.travail img{
+position:relative;
+width:100%;
+}
+
+@keyframes slide {
+ from{
+  transform: translateX(0);
+ }
+ to{
+  transform: translateX(-100%);
+ }
+}
+#myDIV0:hover .image-slide ,
+#myDIV1:hover .image-slide ,
+#myDIV2:hover .image-slide ,
+#myDIV3:hover .image-slide , 
+#myDIV4:hover .image-slide ,
+#myDIV5:hover .image-slide ,
+#myDIVa:hover .image-slide ,
+#myDIVb:hover .image-slide ,
+#myDIVc:hover .image-slide     {
+animation-play-state:paused; 
+transition: 0.4s;
+}
+.slide img:hover{
+transform: scale(1.2);
+transition: 0.2s;
+}
+
+#myDIV0,#myDIV1,#myDIV2,#myDIV3,#myDIV4,#myDIV5, 
+#myDIVa, #myDIVb, #myDIVc  {
+display:none;
+width: 100vw;
+padding: 30px 0px;
+text-align: center;
+background-color:;
+white-space : nowrap;
+transition: 0.4s;
+}
+
+.image-slide{
+display :  inline-block;
+animation : 30s slide infinite linear;
+}
+
+.slide{
+display : inline-block;
+}
+
+.slide img{
+height : 300px; 
+margin : 0 30px;
+transition: 0.5s;
+}
+.contacts p{
+padding : 2vh 0vw;
+text-align: center; 
+align-items: center;
+position:relative;
+}
+
+.contacts p:hover{
+background-color: #005f73;
+color: #e9d8a6;
+transform : scale(1.2);
+transition:0.2s;
+}
+.contacts p{
+transition:0.4s;
+}
+
+
+@media screen and (max-width:900px){
+.propos0{
+display : block;
+}
+h4{
+margin:5vh 0vw 2.5vh 0vw; 
+padding-left : 5vw;
+}
+.info{
+left : 25vw;
+width : 75vw;
+}
+ }
+@media screen and (max-width:550px){
+.info{
+left : 0vw;
+width : 100vw;
+}
+}
