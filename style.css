@@ -138,6 +138,7 @@ pointer-events:none;
 position:relative;
 background:#021e24; 
 margin-bottom: 10px; 
+overflow-x:hidden; 
 }
 
 .icon h3:hover{
