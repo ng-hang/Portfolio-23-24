@@ -19,6 +19,7 @@ font-size:4em;
 color:#ca6702;
 padding:10vh 5vw 5vh 5vw; 
 text-align : center;
+line-height : 1.5em;
 }
 
 h3{
@@ -81,6 +82,7 @@ text-decoration:none;
 
 header {
 width:100vw;
+overflow-x:hidden; 
 height:30px;
 position : fixed; 
 display : flex; 
@@ -136,6 +138,8 @@ width:100vw;
 pointer-events:none; 
 }
 .sec {
+overflow-x:hidden; 
+width:100vw;
 position:relative;
 background:#021e24; 
 margin-bottom: 10px; 
@@ -253,6 +257,10 @@ display : inline-block;
 height : 300px; 
 margin : 0 30px;
 transition: 0.5s;
+}
+.contacts {
+overflow-x:hidden; 
+width:100vw;
 }
 .contacts p{
 padding : 2vh 0vw;
