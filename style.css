@@ -298,4 +298,7 @@ width : 75vw;
 left : 0vw;
 width : 100vw;
 }
+.navigation a{
+margin: 0vh 0vw 0vh 3vw; 
+}
 }
